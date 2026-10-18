@@ -1,4 +1,8 @@
-## Exercise 1. Determinant of a 2×2 Matrix
+# Determinants and Invertibility
+
+## Question
+
+### Exercise 1. Determinant of a 2×2 Matrix
 Compute
 
 $$
@@ -17,50 +21,55 @@ Which matrix is invertible? Justify your answer.
 
 > **Why this exercise:** introduces the simplest determinant calculation and immediately connects it with invertibility.
 
+
 ## Solution
 
-
-### Computations
-
-For a $2 \times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$, the determinant is calculated using the formula:
+Let the matrices $A$ and $B$ be defined as follows:
 
 $$
-\det \begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc
+A = \begin{pmatrix}
+3 & -2 \\
+5 & 4
+\end{pmatrix}, \qquad 
+B = \begin{pmatrix}
+1 & 7 \\
+2 & 14
+\end{pmatrix}
 $$
 
 ---
 
-#### 1. Compute $\det \begin{pmatrix} 3 & -2 \\ 5 & 4 \end{pmatrix}$
+### 1. Compute $\det A$ and $\det B$.
 
-- **Result:** **$22$**
+- **Result:**
+  - $\det A = \mathbf{22}$
+  - $\det B = \mathbf{0}$
 
 - **Main Steps:**
-  1. Identify $a = 3$, $b = -2$, $c = 5$, and $d = 4$.
-  2. Apply the determinant formula:
-     $$
-     \det \begin{pmatrix} 3 & -2 \\ 5 & 4 \end{pmatrix} = (3)(4) - (-2)(5) = 12 - (-10) = 12 + 10 = 22
-     $$
+  1. Calculate $\det A$:
+     $$ \det A = (3)(4) - (-2)(5) = 12 - (-10) = 12 + 10 = 22 $$
+  2. Calculate $\det B$:
+     $$ \det B = (1)(14) - (7)(2) = 14 - 14 = 0 $$
+
+- **Explanation & Formula:**
+  For any $2 \times 2$ matrix, the determinant is computed using the standard formula:
+  $$ \det \begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc $$
+  This formula measures the scaling factor of the transformation formed by the matrix, taking the product of the main diagonal ($ad$) and subtracting the product of the anti-diagonal ($bc$).
 
 ---
 
-#### 2. Compute $\det \begin{pmatrix} 1 & 7 \\ 2 & 14 \end{pmatrix}$
+### 2. Which matrix is invertible? Justify your answer.
 
-- **Result:** **$0$**
+- **Result:**
+  - Matrix $A$ is **invertible**.
+  - Matrix $B$ is **singular (non-invertible)**.
 
 - **Main Steps:**
-  1. Identify $a = 1$, $b = 7$, $c = 2$, and $d = 14$.
-  2. Apply the determinant formula:
-     $$
-     \det \begin{pmatrix} 1 & 7 \\ 2 & 14 \end{pmatrix} = (1)(14) - (7)(2) = 14 - 14 = 0
-     $$
+  1. Check the non-zero condition for $\det A$: $22 \neq 0 \implies A^{-1} \text{ exists}$.
+  2. Check the zero condition for $\det B$: $\det B = 0 \implies B^{-1} \text{ does not exist}$.
 
----
-
-### Invertibility Analysis
-
-- **Result:** Only the matrix $\begin{pmatrix} 3 & -2 \\ 5 & 4 \end{pmatrix}$ is **invertible**. The matrix $\begin{pmatrix} 1 & 7 \\ 2 & 14 \end{pmatrix}$ is **singular (non-invertible)**.
-
-- **Explanation:** 
-  A square matrix is invertible if and only if its determinant is non-zero ($\det \neq 0$).
-  * For $\begin{pmatrix} 3 & -2 \\ 5 & 4 \end{pmatrix}$, the determinant is $22 \neq 0$, which guarantees that an inverse matrix exists.
-  * For $\begin{pmatrix} 1 & 7 \\ 2 & 14 \end{pmatrix}$, the determinant is $0$. Geometrically, the second row is a multiple of the first row ($(2, 14) = 2 \times (1, 7)$), making the rows linearly dependent and causing the matrix to collapse dimensions (zero area/volume), so no inverse exists.
+- **Explanation & Reasoning:**
+  A square matrix is invertible if and only if its determinant is non-zero:
+  $$ A \text{ is invertible} \iff \det(A) \neq 0 $$
+  - **Matrix $A$:** Since $\det A = 22 \neq 0$, matrix $A$ preserves dimensionality and can be inverted.
+  - **Matrix $B$:** Since $\det B = 0$, the matrix causes a dimensional collapse (its second row $(2, 14)$ is a scalar multiple of its first row $(1, 7)$). Because the rows are linearly dependent, the transformation maps space onto a line with zero area, making it impossible to invert back to the original space.
