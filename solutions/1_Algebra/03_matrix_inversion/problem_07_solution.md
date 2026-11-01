@@ -1,3 +1,5 @@
+# Determinants and Invertibility
+
 ## Question
 
 ### Exercise 7. Inverse of a Product
@@ -115,6 +117,6 @@ To study how inverses interact with matrix multiplication, we verify the fundame
   $$
 
 - **Explanation & Reasoning:**
-  Matrix multiplication represents a sequence of linear transformations applied one after another. When you apply transformation $A$ followed by transformation $B$ (written as $AB$), undoing the combined operation requires reversing them in the exact opposite sequence. 
+  Matrix multiplication represents a sequence of linear transformations applied to column vectors. In the product $AB$, the transformation $B$ is applied first, followed by transformation $A$[cite: 3]. 
 
-  Think of putting on socks and then shoes: to undo the process, you must take off your shoes first ($B^{-1}$) and then your socks ($A^{-1}$). Similarly, the inverse of a combined transformation product must be applied in reverse order to properly cancel out each transformation step.
+  To undo this combined operation ($AB$), we must reverse the sequence of transformations in the exact opposite order: we first undo $A$ by applying $A^{-1}$, and then undo $B$ by applying $B^{-1}$. This sequential reversal yields the product $B^{-1}A^{-1}$.
