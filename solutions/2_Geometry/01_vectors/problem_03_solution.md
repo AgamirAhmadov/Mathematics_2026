@@ -17,3 +17,4 @@ and reconstruction yields
 $$\|v\|e=5\left(\frac35,\frac45\right)=(3,4)=v.$$
 
 Normalization changes the length to one while preserving the direction and orientation because division is by the positive scalar $5$.
+ 
