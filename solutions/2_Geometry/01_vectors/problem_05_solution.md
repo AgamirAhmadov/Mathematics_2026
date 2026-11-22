@@ -13,3 +13,4 @@ the angle should be acute. Both norms equal $\sqrt2$, so
 $$\cos\theta=\frac{u\cdot v}{\|u\|\|v\|}=\frac{1}{2}.$$
 
 Therefore $\theta=\arccos(1/2)=\pi/3=60^\circ$. This is acute, agreeing with the qualitative prediction.
+ 
