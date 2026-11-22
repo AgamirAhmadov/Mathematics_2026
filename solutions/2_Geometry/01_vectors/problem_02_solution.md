@@ -17,3 +17,4 @@ The coordinate distance formula independently gives
 $$d(A,B)=\sqrt{(4-1)^2+(-2-2)^2+(6-3)^2}=\sqrt{34}.$$
 
 These agree because Euclidean distance is defined as the length of the displacement vector joining the two points.
+ 
