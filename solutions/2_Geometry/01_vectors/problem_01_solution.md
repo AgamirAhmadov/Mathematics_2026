@@ -15,3 +15,4 @@ The requested check gives
 $$(u+v)-v=(1,3,5)-(-1,4,2)=(2,-1,3)=u.$$
 
 Geometrically, adding vectors means placing the tail of the second vector at the head of the first; the sum is the displacement from the original tail to the final head (equivalently, the diagonal of the parallelogram).
+ 
