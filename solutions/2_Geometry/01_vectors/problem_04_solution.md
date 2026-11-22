@@ -17,3 +17,4 @@ which gives $a=0$. With $w=(2,-1,0)$, the check is
 $$u\cdot w=2-2+0=0,$$
 
 so the constructed vector is perpendicular to $u$.
+ 
