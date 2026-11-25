@@ -17,3 +17,4 @@ Also $\overrightarrow{AD}=(2,5,1)$. I compute
 $$\overrightarrow{AD}\cdot n=2\cdot2+5(-1)+1\cdot1=4-5+1=0.$$
 
 Since this value is zero, $\overrightarrow{AD}$ is perpendicular to the normal, so $D$ lies in the plane through $A,B,C$. The criterion is that a displacement within the plane must have zero dot product with its normal.
+ 
