@@ -17,3 +17,4 @@ whose length is $\sqrt{4+16+25}=\sqrt{45}=3\sqrt5$. Therefore the parallelogram 
 $$\frac12\,3\sqrt5=\frac{3\sqrt5}{2}.$$
 
 The diagonal of a parallelogram made from the two side vectors divides it into two congruent triangles, which explains the factor $1/2$.
+ 
