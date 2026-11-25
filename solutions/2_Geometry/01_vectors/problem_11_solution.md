@@ -21,3 +21,4 @@ while the orthogonality check is
 $$u_{\perp}\cdot v=\frac45-\frac45=0.$$
 
 Reconstruction checks that no component of $u$ was lost; the dot product separately checks that the residual has the required perpendicular direction. Either condition alone would not establish both facts.
+  
