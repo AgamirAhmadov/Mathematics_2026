@@ -19,3 +19,4 @@ Thus the cross product is perpendicular to both original vectors. Reversing the 
 $$v\times u=(-6,3,-1)=-(u\times v),$$
 
 so the perpendicular direction reverses orientation while keeping its magnitude.
+ 
