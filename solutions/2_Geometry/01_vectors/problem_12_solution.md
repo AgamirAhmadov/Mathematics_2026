@@ -21,3 +21,4 @@ $$n\cdot\overrightarrow{AB}=5+3-8=0,$$
 $$n\cdot\overrightarrow{AC}=-5+9-4=0.$$
 
 Both in-plane directions are perpendicular to $n$, which verifies that $n$ is a normal vector.
+ 
