@@ -62,4 +62,8 @@ $$2 + 0t = 2 \implies 2 = 2$$
 - **Explanation & Reasoning:**
   In three-dimensional space ($\mathbb{R}^3$), the dot product $\vec{d} \cdot \vec{n}$ serves as a universal algebraic test for the relative orientation of a line and a plane:
   1. **If $\vec{d} \cdot \vec{n} \neq 0$:** The direction vector is not perpendicular to the normal vector, meaning the line tilts toward the plane and **intersects it at a single unique point**.
-  2. **If $\vec{d} \cdot \vec{n} = 0$:** The direction vector is perpendicular to the normal vector, meaning the line maintains a constant distance from the plane and is parallel to its surface. Substituting a single point from the line into the plane equation then separates
+  2. **If $\vec{d} \cdot \vec{n} = 0$:** The direction vector is perpendicular to the normal vector, meaning the line maintains a constant distance from the plane and is parallel to its surface. Substituting a single point from the line (such as the base point $P_0$) into the plane equation then separates the two parallel subcases:
+     - **If the base point satisfies the plane equation ($0t = 0$):** Because the line starts on the plane and moves strictly parallel to it without changing its perpendicular distance, every point on the line satisfies the equation, meaning the line **lies completely in the plane**.
+     - **If the base point fails the plane equation ($0t = c \neq 0$):** Because the line starts at a non-zero distance from the plane and maintains that constant separation everywhere, no point can satisfy the equation, meaning the line is **strictly parallel** to the plane with zero points of intersection.
+
+  Formatted cleanly for GitHub rendering in accordance with [hints.md](https://github.com/AgamirAhmadov/Mathematics_2026/blob/main/hints.md).
