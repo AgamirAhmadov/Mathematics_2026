@@ -51,5 +51,15 @@ $$P = (1, 0, 2) + \frac{1}{2}(1, 2, -1) = \left(1 + \frac{1}{2}, \; 0 + 1, \; 2 
 
 - **Check in the Plane Equation ($x + y + z = 4$):**
   $$\frac{3}{2} + 1 + \frac{3}{2} = \frac{6}{2} + 1 = 3 + 1 = 4 \quad (\text{True})$$
+  Thus, $P = \left(\frac{3}{2}, 1, \frac{3}{2}\right)$ satisfies the plane equation.
 
-- **
+- **Check in the Line Equation ($(x, y, z) = (1, 0, 2) + t(1, 2, -1)$):**
+  Set the parametric representation equal to $P = \left(\frac{3}{2}, 1, \frac{3}{2}\right)$ and solve each coordinate equation independently for the parameter $t$:
+  - **x-coordinate:** $1 + t = \frac{3}{2} \implies t = \frac{3}{2} - 1 = \frac{1}{2}$
+  - **y-coordinate:** $2t = 1 \implies t = \frac{1}{2}$
+  - **z-coordinate:** $2 - t = \frac{3}{2} \implies t = 2 - \frac{3}{2} = \frac{1}{2}$
+
+  Because all three coordinate equations yield the exact same parameter value $t = \frac{1}{2}$, the point $P = \left(\frac{3}{2}, 1, \frac{3}{2}\right)$ also lies on the line.
+
+- **Explanation & Reasoning:**
+  Substituting the parametric equations of the line into the implicit equation of the plane reduces the three-dimensional intersection problem to a single linear equation in $t$. Verifying that the resulting point satisfies the plane equation directly and produces a single consistent parameter $t$ across all three line coordinates confirms that $P$ is the unique point common to both geometric objects, formatted cleanly for GitHub rendering in accordance with [hints.md](https://github.com/AgamirAhmadov/Mathematics_2026/blob/main/hints.md).
