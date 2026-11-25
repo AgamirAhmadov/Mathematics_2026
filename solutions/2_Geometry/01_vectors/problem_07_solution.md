@@ -11,3 +11,4 @@ $$v=2u,$$
 or equivalently $2u-v+0w=0$. This is a nontrivial linear relation, so the set $\{u,v,w\}$ is linearly dependent regardless of $w$.
 
 No determinant or row reduction is needed: two proportional vectors already supply a dependence relation for the whole set.
+ 
